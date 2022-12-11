@@ -32,6 +32,7 @@ def sum_all_folders(fdict):
 
 with open(filename, "r") as f:
 	line = f.readline().strip()
+	foldercount = 0
 	while line:
 		if "$" in line:
 			if re.match(cd_cmd, line):
